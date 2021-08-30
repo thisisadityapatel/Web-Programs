@@ -1,0 +1,48 @@
+<!DCOTYPE html>
+
+<html lang = "en">
+    <head>
+        <style>
+            .red
+            {
+                color: #ff0000;
+            }
+            .blue
+            {
+                color: #0000ff;
+            }
+            .green
+            {
+                color: #00ff00;
+            }
+        </style>
+
+        <script>
+
+            function listen()
+            {
+                let body = document.querySelector("body");
+                document.querySelector("#redcolor").onclick = function() {
+                    body.style.backgroundColor = "red";
+                };
+                document.querySelector("#bluecolor").onclick = function() {
+                    body.style.backgroundColor = "blue";
+                };
+                document.querySelector("#greencolor").onclick = function() {
+                    body.style.backgroundColor = "green";
+                };
+            }
+
+            document.addEventListener("DOMContentLoaded", listen)
+        </script>
+
+        <title>
+            BackgroundChange
+        </title>
+    </head>
+    <body>
+        <button class="red" id = "redcolor">Red</button>
+        <button class="blue" id = "bluecolor">Blue</button>
+        <button class="green" id = "greencolor">Green</button>
+    </body>
+</html>

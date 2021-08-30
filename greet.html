@@ -1,0 +1,22 @@
+<!DCOTYPE html>
+
+<html lang = "en">
+    <head>
+        <script>
+            function greet()
+            {
+                let name = document.querySelector("#name").value
+                alert("Hello, " + name)
+            }
+        </script>
+        <title>
+            Greetings
+        </title>
+    </head>
+    <body>
+        <form onsubmit="greet()">
+            <input type="text" id="name">
+            <button type="submit">submit</button>
+        </form>
+    </body>
+</html>
