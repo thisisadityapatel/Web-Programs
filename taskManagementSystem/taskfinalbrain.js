@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    const count = 0;
-
     document.querySelector("#submitbutton").disabled = true;
 
     document.querySelector("#task").onkeyup = () => {
@@ -12,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function(){
             document.querySelector("#submitbutton").disabled = true;
         }
     };
-    
+
+
     document.querySelector("#taskform").onsubmit = function(){
         const task = document.querySelector("#task");
         const li = document.createElement("li");

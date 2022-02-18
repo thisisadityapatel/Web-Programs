@@ -1,3 +1,11 @@
 .center{
     text-align:center;
 }
+#navigation{
+    display: inline;
+    padding: 5px;
+}
+#navigationitem{
+    display: inline;
+    padding: 5px;
+}
