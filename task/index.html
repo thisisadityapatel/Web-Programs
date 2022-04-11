@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Task Management System</title>
+        <script src="brain.js"></script>
+        <style>
+            .center{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 class="center">Task Management System</h2>
+        <div class="center">
+            <form id="taskform">
+                <input type="text" autocomplete="off" name="Task" id="task" autofocus>
+                <select id="importance">
+                    <option disabled selected>Importance</option>
+                    <option value="red">Very Important</option>
+                    <option value="green">Moderate</option>
+                    <option value="blue">Least Important</option>
+                </select>
+                <input type="submit" value="Submit" id="submit">
+                <input type="button" value="Undo" id="undo">
+                <input type="button" value="Clear all Tasks" id="clear">
+            </form>
+        </div>
+        <div>
+            <ol id="tasklist">
+
+            </ol>
+        </div>
+    </body>
+</html>
